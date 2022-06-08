@@ -1,2 +1,9 @@
-package PACKAGE_NAME;public class Main {
+import view.MainWindow;
+
+public class Main {
+
+    public static void main(String[] args) {
+        MainWindow mainWindow = new MainWindow();
+        new Thread(mainWindow).start();
+    }
 }
